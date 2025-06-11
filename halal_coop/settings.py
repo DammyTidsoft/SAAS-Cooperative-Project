@@ -73,11 +73,13 @@ WSGI_APPLICATION = 'halal_coop.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
-
+#setup your django postgres database here, you will need to download and install django, create your database with the password and update this database settings
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'halal_cooperative',
+        'USER': 'postgres',
+        'PASSWORD': 'damilare123@',
+        'HOST': 'localhost',
     }
 }
 
